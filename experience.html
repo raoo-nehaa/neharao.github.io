@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work Experience | Neha Rao</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #1f2937;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      color: #1e3a8a;
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    h2 {
+      color: #1e3a8a;
+      font-size: 1.4rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .experience-section {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeSlideIn 0.8s ease forwards;
+    }
+
+    /* Add delay to each section for staggered animation */
+    .experience-section:nth-of-type(1) {
+      animation-delay: 0.2s;
+    }
+
+    .experience-section:nth-of-type(2) {
+      animation-delay: 0.5s;
+    }
+
+    .experience-section:nth-of-type(3) {
+      animation-delay: 0.8s;
+    }
+
+    .role {
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .date-location {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 0.5rem;
+    }
+
+    .tools {
+      font-size: 0.95rem;
+      color: #374151;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    @keyframes fadeSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">← Back to Home</a>
+    <h1>Work Experience</h1>
+  </header>
+
+  <section class="experience-section">
+    <h2>WizdomEd, Mangalore | Karnataka, India</h2>
+    <div class="role">Analyst</div>
+    <div class="date-location">Nov 2023 – July 2024 </div>
+    <p class="tools"><strong>Technologies:</strong> Visual Studio, Jupyter, Databricks, Hadoop, Spark, PySpark, Power BI, SQL Server, MongoDB, MySQL, DB2</p>
+    <ul>
+      <li>Problem solving with data-driven solutions.</li>
+      <li>Data management and quality assurance.</li>
+      <li>Developed visualizations and presentations for stakeholders.</li>
+      <li>Collaborated across teams to align data solutions with goals.</li>
+    </ul>
+  </section>
+
+  <section class="experience-section">
+    <h2>Capgemini Technology Services India Limited | Hyderabad, India</h2>
+    <div class="role">Mainframe Developer</div>
+    <div class="date-location">Oct 2021 – July 2024</div>
+    <p class="tools"><strong>Project:</strong> Euroclear Account – Securities services for over 120 countries.</p>
+    <ul>
+      <li>Maintained backend code in PLI and SQL based on project requirements.</li>
+      <li>Used CICS for code testing and validation.</li>
+      <li>Worked cross-functionally to integrate modules and optimize workflows.</li>
+      <li>Performed code reviews and improved performance metrics.</li>
+      <li><strong>Achievements:</strong></li>
+      <li>Delivered features ahead of schedule and reduced processing time.</li>
+      <li>Contributed to high-quality, scalable system architecture.</li>
+    </ul>
+  </section>
+
+  <section class="experience-section">
+    <h2>Slekin Technical Solutions | Karnataka, India</h2>
+    <div class="role">Intern – Laravel Framework</div>
+    <div class="date-location">Oct 2020 – Nov 2020</div>
+    <p class="tools"><strong>Technologies:</strong> Laravel, PHP, Web Development, MySQL</p>
+    <ul>
+      <li>Created secure login systems with authorization and authentication.</li>
+      <li>Designed and built dynamic web applications using Laravel.</li>
+      <li>Implemented backend logic and data models using MVC pattern.</li>
+    </ul>
+  </section>
+
+</body>
+</html>

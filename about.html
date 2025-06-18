@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me | Neha Rao</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Base Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      color: #1f2937;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2rem;
+      line-height: 1.6;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0; /* start transparent for fadeIn */
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 2rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Back and Next links */
+    a.back-link, a.next-link {
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    a.back-link:hover, a.next-link:hover {
+      text-decoration: underline;
+      background-color: #e0f0ff;
+      color: #1e40af;
+    }
+
+    /* Page Title */
+    h1 {
+      color: #1e3a8a;
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+      flex-grow: 1;
+      text-align: center;
+      min-width: 200px;
+    }
+
+    /* About Me Container */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      padding: 2rem;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Image Section */
+    .about-image {
+      flex: 1 1 280px;
+      text-align: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Text Section */
+    .about-text {
+      flex: 2 1 400px;
+    }
+
+    .about-text h2 {
+      color: #1e3a8a;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-text p {
+      font-size: 1.05rem;
+      color: #374151;
+      line-height: 1.7;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        padding: 1.5rem;
+      }
+      
+      .about-image, .about-text {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+
+      header {
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        order: 3;
+        width: 100%;
+        text-align: center;
+      }
+
+      a.back-link {
+        order: 1;
+      }
+
+      a.next-link {
+        order: 2;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <h1>About Me</h1>
+    <a href="experience.html" class="next-link">Next: Work Experience →</a>
+  </header>
+
+  <section class="about-container">
+    <div class="about-image">
+      <img src="images/Photo.jpeg" alt="Neha Rao" />
+    </div>
+    <div class="about-text">
+      <p>
+         Hi, I’m Neha, a graduate student pursuing Data Analytics Engineering at George Mason University. I’m passionate about transforming complex data into clear, actionable insights using techniques like data management and mining, data processing, big data analytics, machine learning, natural language processing, and data visualization.
+         <br /><br />
+          I enjoy blending analytical precision with creativity to uncover stories hidden within data and help solve real-world problems. My academic journey keeps me curious and driven, always eager to learn new techniques and challenge myself with innovative projects.
+          <br /><br />
+          Outside of data, I love exploring different cultures, diving into a good book, and creating intricate mandala art — which helps me relax and find balance.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>

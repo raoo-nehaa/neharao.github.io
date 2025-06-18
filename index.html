@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neha Rao | Data Scientist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <header>
+    <div class="logo" data-aos="fade-down">Neha Rao</div>
+    <nav data-aos="fade-down" data-aos-delay="100">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Pages ▼</a>
+          <ul class="dropdown-content">
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experience.html">Work Experience</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="social-icons" style="font-size: 2rem;" data-aos="fade-down" data-aos-delay="200">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/neha-rao-415843193/" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/raoo-nehaa" target="_blank" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
+      </a>
+      <!-- Email -->
+      <a href="mailto:nrao6@gmu.edu" aria-label="Email">
+      <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text" data-aos="fade-right">
+      <h1>Hi there, I am <br>Neha Rao</h1>
+      <p>A Graduate Student in Data Analytics Engineering at George Mason University. I focus on using data to uncover meaningful insights that inform decision-making and solve complex problems. While I have developed a strong foundation through my academic and practical experiences, I firmly believe that learning is a continuous and lifelong pursuit.</p>
+      <div class="buttons">
+        <a href="#contact" class="btn primary">Get in touch</a>
+        <a href="#projects" class="btn secondary">See my work</a>
+      </div>
+    </div>
+    <div class="hero-img" data-aos="fade-left" data-aos-delay="200">
+      <img src="images/Photo.jpeg" alt="Neha Rao" />
+    </div>
+  </section>
+
+  <section id="projects" class="section" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-aos="fade-right" data-aos-delay="100">
+        <img src="images/Bridge.png" alt="Big Data Bridge Analysis" />
+        <h3>Impact of Bridge Design Materials and Climate Exposure on Deterioration and Condition</h3>
+        <p>Analyzed bridge datasets using Spark & Hadoop for infrastructure insights.</p>
+        <a href="https://github.com/raoo-nehaa/MyProjects/tree/main/BigDataEssentials" target="_blank"><button>View Code</button></a>
+      </div>
+      <div class="project-card" data-aos="fade-left" data-aos-delay="200">
+        <img src="images/Social.png" alt="Social Media Sentiment Analysis" />
+        <h3>Social Media Trend Analysis</h3>
+        <p>Used BERT, VADER & BERTopic for sentiment and topic modeling.</p>
+        <a href="https://github.com/raoo-nehaa/MyProjects/tree/main/NLP" target="_blank"><button>View Code</button></a>
+      </div>
+      <div class="project-card" data-aos="fade-right" data-aos-delay="300">
+        <img src="images/Health.png" alt="Healthcare Patient Matching" />
+        <h3>Healthcare Patient Matching</h3>
+        <p>Linked SEER & Claims datasets using Python and SQL.</p>
+        <a href="https://github.com/raoo-nehaa/MyProjects/tree/main/Health" target="_blank"><button>View Code</button></a>
+      </div>
+      <div class="project-card" data-aos="fade-left" data-aos-delay="400">
+        <img src="images/Movie.png" alt="Recommender System" />
+        <h3>Movie Recommendation System</h3>
+        <p>Built movie recommendation system using KNN & collaborative filtering.</p>
+        <a href="https://github.com/raoo-nehaa/MyProjects/tree/main/CS" target="_blank"><button>View Code</button></a>
+      </div>
+      <div class="project-card" data-aos="fade-right" data-aos-delay="500">
+        <img src="images/Stats.png" alt="Statistical Analysis in R" />
+        <h3>Chicago Public Library Event Analysis Using Statistical Methods</h3>
+        <p>Data exploration and modeling in R—ANOVA, regression, clustering.</p>
+        <a href="https://github.com/raoo-nehaa/MyProjects/tree/main/Stats" target="_blank"><button>View Code</button></a>
+      </div>
+      <div class="project-card" data-aos="fade-left" data-aos-delay="600">
+        <img src="images/Covid19.png" alt="Data Analysis with Python" />
+        <h3>COVID-19 Behaviour Change Impact Study - Cycle Three</h3>
+        <p>Survey data visualization & SQL queries using Python.</p>
+        <a href="https://github.com/raoo-nehaa/MyProjects/tree/main/AIT580" target="_blank"><button>View Code</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" data-aos="fade-up" data-aos-delay="200">
+    <h2>Get in touch</h2>
+    <form>
+      <form action="https://formspree.io/f/mzzgvrvb" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <button type="submit">Send now</button>
+</form>
+
+    </form>
+  </section>
+
+  <footer data-aos="fade-up" data-aos-delay="400">
+    &copy; 2025 Neha Rao. All rights reserved.
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: 'ease-in-out'
+    });
+  </script>
+
+</body>
+</html>
